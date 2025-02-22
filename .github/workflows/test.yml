@@ -24,7 +24,7 @@ jobs:
       - name: Create yuzu subfolder
         run: |
           mkdir patch_yuzu
-          mv UminekoCatboxChinese patch_yuzu/UminekoCatboxChinese
+          mv UminekoCatboxEnglish patch_yuzu/UminekoCatboxEnglish
       
       - name: Upload yuzu build
         uses: actions/upload-artifact@v4
