@@ -16,7 +16,7 @@ jobs:
           SKIP_ARCHIVE: 1
         
       - name: Upload Atmos build
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: patch_atmos
           path: mods
@@ -24,10 +24,10 @@ jobs:
       - name: Create yuzu subfolder
         run: |
           mkdir patch_yuzu
-          mv UminekoCatboxEnglish patch_yuzu/UminekoCatboxEnglish
+          mv UminekoCatboxChinese patch_yuzu/UminekoCatboxChinese
       
       - name: Upload yuzu build
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: patch_yuzu
           path: patch_yuzu
